@@ -12,6 +12,9 @@ function gestionarFicheroXML(xmlDoc){
 	let libros = xmlDoc.querySelectorAll("libro");
 
 	console.log(libros[0].childNodes.length);
+	console.log(libros[0].childElementCount );
+	console.log(libros[0].children[1]);
+
 	for(let i=1; i<=libros[0].childNodes.length; i++){
 		console.log(i+libros[0].childNodes[i]);
 	}
