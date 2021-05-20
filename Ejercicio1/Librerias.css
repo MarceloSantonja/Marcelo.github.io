@@ -9,7 +9,7 @@ body
 
 div{
     
-    min-height:100vh;
+    min-height:auto;
     max-width: 100vw;
 }
 .tabla
