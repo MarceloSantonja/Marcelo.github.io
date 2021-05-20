@@ -1,0 +1,39 @@
+
+body
+{
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+
+}
+
+div{
+    
+    min-height:100vh;
+    max-width: 100vw;
+}
+.tabla
+{
+  display: table;
+}
+
+
+.fila
+{
+  border: 1px solid black;
+  display: table-row;
+}
+
+.celda
+{
+  border: 1px solid black;
+  vertical-align: middle;
+  display: table-cell;
+}
+#Libreria{
+    min-height: auto;
+    height: auto;
+    display: block;
+    border: 1px solid black;
+
+}
