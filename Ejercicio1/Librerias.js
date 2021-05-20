@@ -16,7 +16,7 @@ function gestionarFicheroXML(xmlDoc){
 	console.log(libros[0].children[1]);
 
 	for(let i=0; i<libros[0].childElementCount; i++){
-		console.log(i+libros[0].children[i]);
+		console.log(i+libros[0].children[i].textContent);
 	}
 
 	capaVacia.innerHTML += "<div id = \"Tabla\">";
