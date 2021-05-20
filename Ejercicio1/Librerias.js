@@ -21,7 +21,8 @@ function gestionarFicheroXML(xmlDoc){
 		capaVacia.innerHTML +=`</div>`;
 	}
 	capaVacia.innerHTML += `</div>`;
-	console.log(capaVacia.nodeValue);
+	console.log(capaVacia.TEXT_NODE);
+	console.log(capaVacia.textContent);
 	
 }
 
