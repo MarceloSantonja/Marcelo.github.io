@@ -9,4 +9,4 @@ function gestionarFicheroXML(xmlDoc){
 }
 
 
-	loadDocA("leerFicheroXML.xml","xml");
+	loadDocA("libro.xml","xml");
