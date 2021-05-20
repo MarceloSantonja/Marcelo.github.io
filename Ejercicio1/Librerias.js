@@ -7,7 +7,7 @@ function gestionarFicheroXML(xmlDoc){
 	let libreria = xmlDoc.querySelectorAll("libreria");
 	
 	console.log(libreria.length);
-	let libros = libreria[0].querySelectorAll("libro");
+	let libros = xmlDoc.querySelectorAll("libro");
 	console.log(libros.length);
 	for(let i=0; i<libros.length; i++)
 		capaVacia.innerHTML = capaVacia.innerHTML + "<p>" + libros[i].textContent + "</p>"
