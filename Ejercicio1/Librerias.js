@@ -10,6 +10,8 @@ function gestionarFicheroXML(xmlDoc){
 	
 
 	let libros = xmlDoc.querySelectorAll("libro");
+	console.log(libros[0].childNodes[1].firstChild.nodeValue);
+	console.log(libros[0].childNodes.length);
 
 	capaVacia.innerHTML += "<div id = \"Tabla\">";
 	for (let i = 1; i <= libreria.length; i++) {
