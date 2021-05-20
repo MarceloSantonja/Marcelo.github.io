@@ -13,7 +13,7 @@ function gestionarFicheroXML(xmlDoc){
 
 	console.log(libros[0].childNodes.length);
 	for(let i=1; i<=libros[0].childNodes.length; i++){
-		console.log(libros[0].childNodes[i]);
+		console.log(i+libros[0].childNodes[i]);
 	}
 
 	capaVacia.innerHTML += "<div id = \"Tabla\">";
