@@ -2,11 +2,11 @@
 
 
 function gestionarFicheroXML(xmlDoc){
-	alert(xmlDoc)
+	/*alert(xmlDoc)*/
 	let capaVacia = document.querySelector("#ContenedorLibros");
 	let libros = xmlDoc.querySelectorAll("libreria");
 	console.log(libros.textContent);
-	console.log(libros.console);
+	console.log(libros.length);
 
 	for(let i=0; i<libros.length; i++)
 		capaVacia.innerHTML = capaVacia.innerHTML + "<p>" + libros[i].textContent + "</p>"
