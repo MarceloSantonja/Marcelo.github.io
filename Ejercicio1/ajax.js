@@ -14,4 +14,8 @@ function loadDocA(fichero,tipo)
             else
 			    gestionarFicheroTXT(http.responseText)
 		}})
+
+
+
+        
 }
