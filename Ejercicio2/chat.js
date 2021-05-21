@@ -2,7 +2,7 @@
 
 
 function gestionarFicheroXML(txtDoc){
-	alert(txtDoc);
+	console.log(txtDoc);
 	let capaVacia = document.querySelector("#CanalChat");
 
 
@@ -10,7 +10,7 @@ function gestionarFicheroXML(txtDoc){
 }
 
 
-	loadDocA("chat.txt","txt"); /*tenemos un objeto xml */
+	loadDocA("chat.txt","txt"); 
 
 
 
