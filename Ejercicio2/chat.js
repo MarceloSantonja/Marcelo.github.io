@@ -4,6 +4,7 @@
 function gestionarFicheroTXT(txtDoc){
 	console.log(txtDoc);
 	let capaVacia = document.querySelector("#CanalChat");
+	capaVacia = "";
 	let chat = txtDoc.split(`\n`);
 	console.log(chat.length);
 	for (let i = 0; i < chat.length; i++) {
