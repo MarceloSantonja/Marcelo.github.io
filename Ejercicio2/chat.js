@@ -10,7 +10,7 @@ function gestionarFicheroXML(txtDoc){
 }
 
 
-	loadDocA("libros.xml","xml"); /*tenemos un objeto xml */
+	loadDocA("chat.txt","txt"); /*tenemos un objeto xml */
 
 
 
