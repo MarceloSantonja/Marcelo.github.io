@@ -1,7 +1,7 @@
 'use strict';
 
 
-function gestionarFicheroXML(txtDoc){
+function gestionarFicheroTXT(txtDoc){
 	console.log(txtDoc);
 	let capaVacia = document.querySelector("#CanalChat");
 
