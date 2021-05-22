@@ -19,7 +19,7 @@ function gestionarFicheroTXT(txtDoc){
 }
 
 
-	 setTimeout( loadDocA("chat.txt","txt"),10000); 
+	 setTimeout( loadDocA("chat.txt","txt"),100000000); 
 
 	
 
