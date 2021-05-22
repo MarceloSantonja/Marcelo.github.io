@@ -12,10 +12,11 @@ function gestionarFicheroXML(xmlDoc){
 	let libros = xmlDoc.querySelectorAll("libro");
 	
 	console.log(libreria.length);
-	console.log(libreria[0].length);
+	console.log(libreria[0].childElementCount);
 	console.log(libreria[0].libro);
 	console.log(libreria[0].querySelectorAll("libro"));
-
+	let precios = libreria[0].querySelectorAll("precio");
+	console.log(Math.min(precios));
 
 	let textoIner = "";
 
