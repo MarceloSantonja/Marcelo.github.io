@@ -21,5 +21,5 @@ function gestionarFicheroTXT(txtDoc){
 
 	function recargaFichero() { setInterval( loadDocA("chat.txt","txt"),10000);} 
 
-
+	recargaFichero();
 
