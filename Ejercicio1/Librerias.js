@@ -10,16 +10,9 @@ function gestionarFicheroXML(xmlDoc){
 	console.log(libreria.length);
 	console.log(libreria[0].childElementCount);
 	console.log(libreria[0].querySelectorAll("libro"));
-	console.log(libreria[0].querySelectorAll("precio"));
-
-	
-	
-	
-
 	console.log(libreria[0].querySelectorAll("libro").length);
 
 
-	
 	for (let i = 0; i < libreria.length; i++) {
 		let nombre = libreria[i].querySelector("nombre");
 		textoIner += `<h2>`+nombre.textContent+`</h2><div id = "Tabla">`;
@@ -37,16 +30,15 @@ function gestionarFicheroXML(xmlDoc){
 			}
 		}
 		
-
 		for(let j=0; j < libros.length; j++){
 		textoIner = textoIner + `<div class="fila">`;
 		
-		for(let k=0; k < libros[j].childElementCount; k++){
-			if (libros[j].children[k].textContent == precioMinimo.toString() ) 
-				textoIner += `<div class="celda" style= "background-color: green;">`+libros[j].children[k].textContent+`</div>`;
-			else
-				textoIner += `<div class="celda">`+libros[j].children[k].textContent+`</div>`;
-		}
+			for(let k=0; k < libros[j].childElementCount; k++){
+				if (libros[j].children[k].textContent == precioMinimo.toString() ) 
+					textoIner += `<div class="celda" style= "background-color: green;">`+libros[j].children[k].textContent+`</div>`;
+				else
+					textoIner += `<div class="celda">`+libros[j].children[k].textContent+`</div>`;
+			}
 		
 		textoIner += `</div>`;
 		}
