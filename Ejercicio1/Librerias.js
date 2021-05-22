@@ -18,11 +18,21 @@ function gestionarFicheroXML(xmlDoc){
 	console.log(libreria[0].querySelectorAll("precio"));
 	let precios = libreria[0].querySelectorAll("precio");
 
-	console.log(precios[0].nodeValue);
+
+	let arrayPrecios =  new Array();
+	for (let i = 0; i < precios.length; i++) {
+		
+		arrayPrecios.push((Number)(precios[i].textContent));
+		
+	}
+
+	arrayPrecios.forEach(element => {
+		console.log(element);
+	});
 	console.log(precios[0].textContent);
-	console.log(precios[0].value);
 	
-	let a = new Array();
+	
+	
 
 	let textoIner = "";
 
