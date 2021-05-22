@@ -32,9 +32,6 @@ div{
   display: table-cell;
 }
 #Libreria{
-    min-height: auto;
-    height: auto;
-    display: block;
     border: 1px solid black;
 
 }
