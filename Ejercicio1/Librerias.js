@@ -23,7 +23,7 @@ function gestionarFicheroXML(xmlDoc){
 	
 	for (let i = 0; i < precios.length; i++) {
 		let precio = (Number)(precios[i].textContent);
-		if (precioMinimo = 0) {
+		if (precioMinimo == 0) {
 			precioMinimo = precio;	
 		}else if (precioMinimo > precio) {
 			precioMinimo = precio;		
@@ -31,10 +31,6 @@ function gestionarFicheroXML(xmlDoc){
 	}
 
 	console.log (precioMinimo);
-	
-	
-	
-	
 
 	let textoIner = "";
 
