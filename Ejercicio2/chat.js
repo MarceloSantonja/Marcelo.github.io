@@ -19,7 +19,7 @@ function gestionarFicheroTXT(txtDoc){
 }
 
 
-	loadDocA("chat.txt","txt"); 
+	function recargaFichero() { setInterval( loadDocA("chat.txt","txt"),10000);} 
 
 
 
