@@ -17,20 +17,20 @@ function gestionarFicheroXML(xmlDoc){
 	console.log(libreria[0].querySelectorAll("libro"));
 	console.log(libreria[0].querySelectorAll("precio"));
 	let precios = libreria[0].querySelectorAll("precio");
-
-	console.log(Math.min((Number)(...precios)));
+	let precioMinimo = 0;
 	
-	let arrayPrecios =  new Array();
+	
+	
 	for (let i = 0; i < precios.length; i++) {
-		
-		arrayPrecios.push((Number)(precios[i].textContent));
-		
+		let precio = (Number)(precios[i].textContent);
+		if (precioMinimo = 0) {
+			precioMinimo = precio;	
+		}else if (precioMinimo > precio) {
+			precioMinimo = precio;		
+		}
 	}
 
-	arrayPrecios.forEach(element => {
-		console.log(element);
-	});
-	console.log (Math.min(...arrayPrecios));
+	console.log (precioMinimo);
 	
 	
 	
