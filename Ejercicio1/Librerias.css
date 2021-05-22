@@ -16,6 +16,8 @@ div{
 {
   display: table;
   width: 80vw;
+  align-self: center;
+  border-collapse: collapse;
 }
 
 
@@ -30,12 +32,4 @@ div{
   border: 1px solid black;
   vertical-align: middle;
   display: table-cell;
-}
-#Libreria{
-    min-height: auto;
-    height: auto;
-    display: block;
-    width: 80vw;
-    border: 1px solid black;
-
 }
