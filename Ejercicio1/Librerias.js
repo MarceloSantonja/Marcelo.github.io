@@ -8,7 +8,7 @@ function gestionarFicheroXML(xmlDoc){
 	let nombre = xmlDoc.querySelectorAll("nombre");
 
 
-	let libros = xmlDoc.querySelectorAll("libro");
+
 	
 	console.log(libreria.length);
 	console.log(libreria[0].childElementCount);
@@ -37,11 +37,11 @@ function gestionarFicheroXML(xmlDoc){
 	for (let i = 0; i < libreria.length; i++) {
 		textoIner += `<h2>`+nombre[i].textContent+`</h2><div id = "Tabla">`;
 		textoIner += `<div class="fila"> <div class="celda">ISBN</div> <div class="celda">titulo</div> <div class="celda">Nivel de profundidad</div> <div class="celda">autor</div> <div class="celda">editorial</div> <div class="celda">fecha de publicacion</div> <div class="celda">pagina Web</div ><div class="celda">precio</div></div>`;
-		libros = libreria[i].querySelectorAll("libro");
+		let libros = libreria[i].querySelectorAll("libro");
 		console.log(libros.length);
 
 
-		
+
 		for(let j=0; j < libros.length; j++){
 		textoIner = textoIner + `<div class="fila">`;
 		
