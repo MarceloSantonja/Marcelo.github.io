@@ -22,6 +22,7 @@ div{
 {
   border: 1px solid black;
   display: table-row;
+  width: 100vw;
 }
 
 .celda
