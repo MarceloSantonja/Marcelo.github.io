@@ -15,7 +15,7 @@ div{
 .tabla
 {
   display: table;
-  border: 1px solid black;
+  width: 80vw;
 }
 
 
@@ -23,8 +23,6 @@ div{
 {
   border: 1px solid black;
   display: table-row;
-  width: 100vw;
-  text-align: right;
 }
 
 .celda
@@ -32,4 +30,12 @@ div{
   border: 1px solid black;
   vertical-align: middle;
   display: table-cell;
+}
+#Libreria{
+    min-height: auto;
+    height: auto;
+    display: block;
+    width: 80vw;
+    border: 1px solid black;
+
 }
