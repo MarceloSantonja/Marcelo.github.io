@@ -19,9 +19,10 @@ function gestionarFicheroXML(xmlDoc){
 
 	let textoIner = "";
 
-	textoIner += `<div id = "Tabla">`;
+	
 	for (let i = 1; i <= libreria.length; i++) {
-		textoIner += `<div class ="fila" id="Libreria">`+nombre[i-1].textContent+`</div><div class="fila"> <div class="celda">ISBN</div> <div class="celda">titulo</div> <div class="celda">Nivel de profundidad</div> <div class="celda">autor</div> <div class="celda">editorial</div> <div class="celda">fecha de publicacion</div> <div class="celda">pagina Web</div ><div class="celda">precio</div></div>`;
+		textoIner += `<h2>`+nombre[i-1].textContent+`</h2><div id = "Tabla">`;
+		textoIner += `<div class="fila"> <div class="celda">ISBN</div> <div class="celda">titulo</div> <div class="celda">Nivel de profundidad</div> <div class="celda">autor</div> <div class="celda">editorial</div> <div class="celda">fecha de publicacion</div> <div class="celda">pagina Web</div ><div class="celda">precio</div></div>`;
 
 		for(let j=1; j<=3; j++){
 		textoIner = textoIner + `<div class="fila">`;
@@ -32,9 +33,9 @@ function gestionarFicheroXML(xmlDoc){
 		
 		textoIner += `</div>`;
 		}
-		
+		textoIner += `</div>`;
 	}
-	textoIner += `</div>`;
+	
 	capaVacia.innerHTML += textoIner;
 
 
