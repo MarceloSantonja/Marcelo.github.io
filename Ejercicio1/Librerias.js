@@ -28,7 +28,7 @@ function gestionarFicheroXML(xmlDoc){
 			precioMinimo = precio;		
 		}
 	}
-	console.log(libreria.querySelectorAll("libro").length);
+	console.log(libreria[0].querySelectorAll("libro").length);
 
 	console.log (precioMinimo);
 
@@ -38,7 +38,7 @@ function gestionarFicheroXML(xmlDoc){
 	for (let i = 0; i < libreria.length; i++) {
 		textoIner += `<h2>`+nombre[i-1].textContent+`</h2><div id = "Tabla">`;
 		textoIner += `<div class="fila"> <div class="celda">ISBN</div> <div class="celda">titulo</div> <div class="celda">Nivel de profundidad</div> <div class="celda">autor</div> <div class="celda">editorial</div> <div class="celda">fecha de publicacion</div> <div class="celda">pagina Web</div ><div class="celda">precio</div></div>`;
-
+		
 		for(let j=0; j<libreria[i].length; j++){
 		textoIner = textoIner + `<div class="fila">`;
 		
