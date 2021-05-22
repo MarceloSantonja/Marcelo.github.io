@@ -6,8 +6,7 @@ function gestionarFicheroXML(xmlDoc){
 	let capaVacia = document.querySelector("#ContenedorLibros");
 	let libreria = xmlDoc.querySelectorAll("libreria");
 	let nombre = xmlDoc.querySelectorAll("nombre");
-	console.log(nombre[0].textContent);
-	
+
 
 	let libros = xmlDoc.querySelectorAll("libro");
 	
@@ -29,21 +28,25 @@ function gestionarFicheroXML(xmlDoc){
 			precioMinimo = precio;		
 		}
 	}
+	console.log(libreria.querySelectorAll("libro").length);
 
 	console.log (precioMinimo);
 
 	let textoIner = "";
 
 	
-	for (let i = 1; i <= libreria.length; i++) {
+	for (let i = 0; i < libreria.length; i++) {
 		textoIner += `<h2>`+nombre[i-1].textContent+`</h2><div id = "Tabla">`;
 		textoIner += `<div class="fila"> <div class="celda">ISBN</div> <div class="celda">titulo</div> <div class="celda">Nivel de profundidad</div> <div class="celda">autor</div> <div class="celda">editorial</div> <div class="celda">fecha de publicacion</div> <div class="celda">pagina Web</div ><div class="celda">precio</div></div>`;
 
-		for(let j=1; j<=3; j++){
+		for(let j=0; j<libreria[i].length; j++){
 		textoIner = textoIner + `<div class="fila">`;
 		
-		for(let k=0; k<libros[(i*j)-1].childElementCount; k++){
-			textoIner +=	 `<div class="celda">`+libros[(i*j)-1].children[k].textContent+`</div>`;
+		libros = libreria[i].querySelectorAll("libro");
+
+
+		for(let k=0; k < libros[j].childElementCount; k++){
+			textoIner +=	 `<div class="celda">`+libros[j].children[k].textContent+`</div>`;
 		}
 		
 		textoIner += `</div>`;
