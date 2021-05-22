@@ -18,8 +18,8 @@ function gestionarFicheroXML(xmlDoc){
 	console.log(libreria[0].querySelectorAll("precio"));
 	let precios = libreria[0].querySelectorAll("precio");
 
+	console.log(Math.min((Number)(...precios)));
 	
-
 	let arrayPrecios =  new Array();
 	for (let i = 0; i < precios.length; i++) {
 		
@@ -30,7 +30,7 @@ function gestionarFicheroXML(xmlDoc){
 	arrayPrecios.forEach(element => {
 		console.log(element);
 	});
-	console.log (Math.min(arrayPrecios));
+	console.log (Math.min(...arrayPrecios));
 	
 	
 	
