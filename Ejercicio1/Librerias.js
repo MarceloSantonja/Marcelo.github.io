@@ -15,7 +15,8 @@ function gestionarFicheroXML(xmlDoc){
 	console.log(libreria[0].childElementCount);
 	console.log(libreria[0].libro);
 	console.log(libreria[0].querySelectorAll("libro"));
-	let precios = libreria[0].querySelectorAll("precio");
+	let Nombreprecios = (Number)(libreria[0].querySelectorAll("precio"));
+
 	console.log(Math.min(precios));
 
 	let textoIner = "";
