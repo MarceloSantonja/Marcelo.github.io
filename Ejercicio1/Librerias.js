@@ -46,13 +46,16 @@ function gestionarFicheroXML(xmlDoc){
 	}
 	
 	capaVacia.innerHTML += textoIner;
-
-
 	
 }
 
+let capa = document.querySelector("h1") 
+capa.addEventListener("click",CargarFichero);
+function CargarFichero()
+{
+	loadDocA("libros.xml","xml");
+}
 
-	loadDocA("libros.xml","xml"); /*tenemos un objeto xml */
 
 
 
